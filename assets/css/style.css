@@ -1,0 +1,172 @@
+body {
+    /* image for background */
+    background-image: url('../images/background.png');
+  
+    /* font parameters */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  
+    /* added padding to prevent navbar overlap. (100 based on browser inpector of size) */
+    padding-top: 90px;
+  }
+  
+  a {
+    text-decoration: none;
+    align-content: center;
+    color: black ;
+  }
+  
+  .navbar {
+    /* pulls everything down to push up against bottom border */
+    padding-bottom: 0;
+  
+    /* allows ??? to control the horizontal position */
+    padding-left: 0;
+  
+    /* creates solid line for the bottom border  */
+    border-bottom: solid;
+    /* border-bottom-color: #ccc; */
+    border-bottom-color: rgb(240, 226, 34);
+    background-color: #76B7DF;
+  }
+  
+  .navbar-brand {
+    /* background-color: #4aaaa5; */
+    /*background-color: #4C7684;*/
+    background-color: #76B7DF;
+    padding: 15px;
+    font-size: 30px;
+    /* color: #fff !important; TODO can we do this without the !important */
+    /* color: #D1CB6F !important; TODO can we do this without the !important */
+    /* color: #B8C9D1 !important; */
+    color: #fff !important;
+  }
+  
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  /* container for nav header */
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #777 !important;
+  }
+  
+  /* Change the color of links on hover */
+  .nav-link:hover {
+    /* question how do i impact these values without using important */
+    /* background-color: #4Cabc2 !important; */
+    background-color: #4C7684 !important;
+    color: #fff !important;
+  }
+  
+  /* this is not working */
+  .nav-link:after { 
+    border-right: solid 1px;
+    border-right-color: #c7c7c7;
+  }
+  
+  #details {
+    /* background-color: #fff;   */
+    /* background-color: #B4CBD9;   */
+    background-image: linear-gradient(to right,#b4cbd9 0,#76B7DF 100%);
+    /* provides spacing between the top and bottom nav bars and the content */
+    margin-top: 20px;
+    margin-bottom: 80px;
+  
+  
+    /* provide spaceing around the text */
+    padding: 20px;
+  } 
+  
+  #bio-image {
+    float: left;
+    padding-right: 1em;
+    padding-top: 0.25em;
+  }
+  
+  input, textarea {
+    width: 100%;
+  }
+  
+  .footer {
+    /* set text properties */
+    background-color: #666;
+    
+    /* sets height of footer*/
+    height: 10%;
+    
+    /* sets properties for footer border*/
+    border-top: solid;
+    border-top-color: #4C7684;
+    border-top-width: 8px;
+  }
+  
+  .footer-text {
+    /* forces text across the entire screen so it has a center */
+    width: 100%;
+    text-align: center;
+  
+    font-size: 10px;
+    /* color:#fff;  */
+  }
+  
+  
+  /* media query for screen size to be applied to center text to switch at same time as navbar */
+  @media (max-width: 768px) {
+    .container-fluid {
+      /* removes paddding on either side */
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+  /* removes verticle lines between text */
+    li {
+      border-right: none;
+    }
+  
+  /* collapses space between menu options when they stack vertically*/
+    .nav-link{
+      padding: 1px;
+    }
+  }
+  
+  .product {
+    width: 210px;
+    height: 140px;
+    margin: 10px;
+    float: left;
+  }
+  
+  .image-formatter {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -30px;
+  }
+  
+  .product-label {
+    position: relative;
+    margin: 0;
+    top: 100px;
+    width: 210px;
+    padding: 5px 0;
+    font-size: 10px;
+    background-color: #4C7684;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .center {
+    text-align: center;
+  }
