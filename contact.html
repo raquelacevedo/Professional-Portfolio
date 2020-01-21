@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/images/gp.png">
+    <title>Raquel - Contact</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <script src="https://kit.fontawesome.com/6cbff65fb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Start header -->
+  <!-- Question: fixed-top ties the navbar to the top but also the container why -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <!-- need to add row with col offset to adjust alignment of brand-->
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand ">Raquel Acevedo</a>
+            </div>
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </nav>
+  <!-- end header -->
+  <!-- start container -->
+  <div class="container-fluid">
+    <section id="details">
+    <p>
+        <label for="name">Name</label> 
+        <br>
+        <input type="text" id="name" name="name" required>
+    </p>
+    <p>
+        <label for="email">Email</label> 
+        <br>
+        <input type="text" id="email" name="email" required>
+    </p>  
+    <p>
+        <label for="message">Message</label> 
+        <br>
+        <textarea id="message" name="message" class="textarea-wrapper" required> </textarea>
+    </p>  
+    <input type="button" class="my-button" value="Submit">
+    </section>
+  </div>    
+
+  <!--  Footer -->
+  <nav class="navbar fixed-bottom footer">
+    <div class="footer-text">
+      <a href="./assets/RaquelEAcevedoResume.pdf" download>
+       <i class='far fa-file-pdf fa-2x' alt='download resume'></i>
+      </a>
+      <a href="https://github.com/raquelacevedo/">
+        <i class='fab fa-github fa-2x' alt='link to github'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/raquel-acevedo-a27a4b9b/">
+        <i class='fab fa-linkedin fa-2x' alt='link to linkedin'></i>
+      </a>
+    </div>
+</nav>
+<!-- End Footer -->
+</body>
+</html>
