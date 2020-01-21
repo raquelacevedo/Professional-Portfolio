@@ -31,14 +31,9 @@ body {
   }
   
   .navbar-brand {
-    /* background-color: #4aaaa5; */
-    /*background-color: #4C7684;*/
     background-color: #76B7DF;
     padding: 15px;
     font-size: 30px;
-    /* color: #fff !important; TODO can we do this without the !important */
-    /* color: #D1CB6F !important; TODO can we do this without the !important */
-    /* color: #B8C9D1 !important; */
     color: #fff !important;
   }
   
@@ -58,28 +53,24 @@ body {
   
   .nav-link {
     text-decoration: none;
-    color: #777 !important;
+    color: black !important;
   }
   
   /* Change the color of links on hover */
   .nav-link:hover {
-    /* question how do i impact these values without using important */
-    /* background-color: #4Cabc2 !important; */
     background-color: #4C7684 !important;
     color: #fff !important;
   }
   
-  /* this is not working */
+  /* not sure if this is  working */
   .nav-link:after { 
     border-right: solid 1px;
     border-right-color: #c7c7c7;
   }
   
   #details {
-    /* background-color: #fff;   */
-    /* background-color: #B4CBD9;   */
     background-image: linear-gradient(to right,#b4cbd9 0,#76B7DF 100%);
-    /* provides spacing between the top and bottom nav bars and the content */
+    /* spacing between the top and bottom nav bars and the content */
     margin-top: 20px;
     margin-bottom: 80px;
   
